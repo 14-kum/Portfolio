@@ -1,0 +1,87 @@
+/* Add Tailwind's base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom keyframes and animation classes */
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+}
+
+/* Animation classes */
+.slide-in {
+  animation: slideIn 1s ease-out;
+}
+
+.zoom-in {
+  animation: zoomIn 1.5s ease-out;
+}
+
+.slide-left {
+  animation: slideLeft 1s ease-out;
+}
+
+.zoom-out {
+  animation: zoomOut 1.5s ease-out;
+}
+
+/* Rainbow text gradient */
+.rainbow-text {
+  background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hover effects */
+.hover\:slide-in:hover {
+  animation: slideLeft 1s ease-out;
+}
+
+.transform {
+  transition: transform 0.5s ease;
+}
+
+/* Ensure the image slides up and zooms in on hover */
+.hover\:translate-y-0:hover {
+  transform: translateY(0) scale(1);
+}
