@@ -60,7 +60,7 @@ const App = () => {
           className="cursor-pointer hover:text-blue-500"
           onClick={() => toggleVisibility('section3')}
         >
-          Heading 3
+          Education
         </h2>
         <p className={`transition-opacity ${visibleSection === 'section3' ? 'block' : 'hidden'}`}>
           Paragraph content for Heading 3.
@@ -73,7 +73,7 @@ const App = () => {
           className="cursor-pointer hover:text-blue-500"
           onClick={() => toggleVisibility('section4')}
         >
-          Heading 4
+          Internship
         </h2>
         <p className={`transition-opacity ${visibleSection === 'section4' ? 'block' : 'hidden'}`}>
           Paragraph content for Heading 4.

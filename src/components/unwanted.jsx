@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div className="relative h-screen">
       {/* Top Left Heading */}
-      <div className="absolute top-0 left-0 p-4">
+      <div className="absolute top-0 left-0 p-10">
         <h2
           className="cursor-pointer hover:text-blue-500"
           onClick={() => toggleVisibility('section1')}
